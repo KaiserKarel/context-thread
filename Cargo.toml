@@ -1,6 +1,6 @@
 [package]
 name = "ctx-thread"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["kaiserkarel <k.l.kubat@gmail.com>"]
 edition = "2018"
 description = "Cooperative, scoped threads based on crossbeam and golang's [context](https://golang.org/pkg/context/) package."

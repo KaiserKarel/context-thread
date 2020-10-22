@@ -1,5 +1,11 @@
 
 [![tests Actions Status](https://github.com/kaiserkarel/context-thread/workflows/test/badge.svg)](https://github.com/kaiserkarel/context-thread/actions)
+[![Cargo](https://img.shields.io/crates/v/ctx-thread.svg)](
+https://crates.io/crates/ctx-thread)
+[![Documentation](https://docs.rs/ctx-thread/badge.svg)](
+https://docs.rs/ctx-thread)
+
+# Context-thread
 
 Threads that run within a context.
 
@@ -8,7 +14,7 @@ Most of the time, threads that outlive the parent thread are considered a code s
 have access to the Context object, which they can use to poll the status of the thread group.
 If one of the threads panics, the context is cancelled.
 
-# Scope
+## Scope
 
 This library is based on the [crossbeam](https://docs.rs/crossbeam/0.8.0/crossbeam/)'s scoped threads:
 
@@ -30,7 +36,7 @@ scope(|ctx| {
 }).unwrap();
 ```
 
-# Context
+## Context
 
 Aside from referring to the outer scope, threads may check the extra methods and return if
 necessary:

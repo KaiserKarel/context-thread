@@ -57,6 +57,8 @@
 //!     });
 //! }).unwrap();
 //! ```
+//! Note that these context based cancellations are a form of cooperative scheduling. Threads
+//! can still block even if a context expires.
 
 use std::fmt;
 use std::io;
