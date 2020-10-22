@@ -1,0 +1,15 @@
+[package]
+name = "ctx-thread"
+version = "0.1.0"
+authors = ["kaiserkarel <k.l.kubat@gmail.com>"]
+edition = "2018"
+description = "Cooperative, scoped threads based on crossbeam and golang's [context](https://golang.org/pkg/context/) package."
+repository = "https://github.com/kaiserkarel/context-thread/"
+license-file = "LICENSE"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crossbeam-utils = "0.8"
+cfg-if = "1"
