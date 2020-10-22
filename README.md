@@ -1,3 +1,6 @@
+
+[![tests Actions Status](https://github.com/kaiserkarel/context-thread/workflows/test/badge.svg)](https://github.com/kaiserkarel/context-thread/actions)
+
 Threads that run within a context.
 
 Most of the time, threads that outlive the parent thread are considered a code smell.
